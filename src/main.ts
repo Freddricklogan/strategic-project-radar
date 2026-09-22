@@ -71,6 +71,7 @@ $<HTMLInputElement>('file-csv').addEventListener('change', (e) => {
 $('reset').addEventListener('click', () => { state.projects = sampleProjects(); state.selectedId = 'p1'; state.spiAdjust = true; $<HTMLInputElement>('spi-adjust').checked = true; setStatus('Sample portfolio restored.', 'ok'); render(); });
 
 const shell = mountExecShell({
+  theme: 'midnight',
   title: 'Strategic Project Radar',
   tagline: 'Earned-value management across a project portfolio — PV, EV, CPI, SPI, EAC and TCPI from stated formulas — with a seeded Monte Carlo schedule-risk simulation from three-point estimates. Sample portfolio; illustrative.',
   repo: REPO, pagesUrl: PAGES,
